@@ -1,0 +1,16 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+		"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+<bean id="c" class="lookUpMethodDI.CarInterface">
+<lookup-method name="myCarEngine" bean="e"/>
+</bean>
+<bean id="e" class="lookUpMethodDI.EngineDependency">
+<property name="name" value="swiftEngine"/>
+</bean>
+<bean id="b" class="lookUpMethodDI.BusAbstract">
+<lookup-method name="myBusEngine" bean="e"/>
+</bean>
+<bean id="t" class="lookUpMethodDI.TrukConcreate">
+<lookup-method name="myTrukEngine" bean="e"/>
+</bean>
+</beans>

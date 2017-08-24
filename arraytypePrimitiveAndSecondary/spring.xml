@@ -1,0 +1,27 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+		"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	
+	<bean id="t" class="arraytypePrimitiveAndSecondary.Car">
+		<!-- primitive array -->
+		<property name="carNames">
+			<list>
+				<value>AUDI</value>
+				<value>HONDA</value>
+			</list>
+		</property>
+		<!-- secondary array -->
+		<property name="engine">
+			<list>
+				<ref bean="e1" />
+				<ref bean="e2" />
+			</list>
+		</property>
+		</bean>
+		<bean id="e1" class="arraytypePrimitiveAndSecondary.Engine">
+		<property name="modelYear" value="2013" />
+	</bean>
+	<bean id="e2" class="arraytypePrimitiveAndSecondary.Engine">
+		<property name="modelYear" value="2014" />
+	</bean>
+</beans>

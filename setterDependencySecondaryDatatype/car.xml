@@ -1,0 +1,11 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+		"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean id="t" class="setterDependencySecondaryDatatype.Car">
+		<property name="carName" value="AUDI" />
+		<property name="engine" ref="e">
+			
+		</property>
+
+	</bean>
+</beans>

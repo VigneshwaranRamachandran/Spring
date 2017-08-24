@@ -1,0 +1,24 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+		"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+<bean id="t" class="defaultCollectionDatatype.Test">
+<property name="fruits">
+<list>
+<value>apple</value>
+<value>orange</value>
+</list>
+</property>
+<property name="cricketers">
+<set>
+<value>sachin</value>
+<value>vicky</value>
+</set>
+</property>
+<property name="countryC">
+<map>
+<entry key="india" value="delhi"></entry>
+<entry key="pa" value="pa"></entry>
+</map>
+</property>
+</bean>
+</beans>

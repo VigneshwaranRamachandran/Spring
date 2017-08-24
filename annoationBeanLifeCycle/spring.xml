@@ -1,0 +1,10 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+		"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
+<bean id="t" class="annoationBeanLifeCycle.Test">
+<property name="username" value="system"/>
+<property name="pwd" value="admin"/>
+</bean>
+
+</beans>

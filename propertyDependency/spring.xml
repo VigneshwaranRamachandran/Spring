@@ -1,0 +1,14 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+		"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+<bean id="t" class="propertyDependency.Test">
+<property name="driver">
+<props>
+<prop key="driverclass">oracle.jdbc..</prop>
+<prop key="url">oracle</prop>
+<prop key="user">username</prop>
+<prop key="password">password</prop>
+</props>
+</property>
+</bean>
+</beans>

@@ -1,0 +1,8 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+		"http://www.springframework.org/dtd/spring-beans.dtd">
+		<beans>
+		<bean class="applicationListener.IocCloseListener"/>
+		<bean class="applicationListener.IocRefreshListener"/>
+		<bean class="applicationListener.IocStartListener"/>
+		<bean class="applicationListener.IocStopListener"/>
+	</beans>

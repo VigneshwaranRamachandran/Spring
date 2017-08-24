@@ -1,0 +1,11 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+		"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+<bean id="t" class="programaticBeanLifeCycle.Test">
+<property name="driver" value="oracle.jdbc.OracleDriver"/>
+<property name="url" value="jdbc:oracle:thin:@Localhost:1521:xe"/>
+<property name="username" value="system"/>
+<property name="pwd" value="admin"/>
+</bean>
+
+</beans>
